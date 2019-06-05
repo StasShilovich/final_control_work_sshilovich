@@ -1,0 +1,40 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="INSERT_CARD_1" author="stas.shilovich@gmail.com">
+        <insert tableName="T_CARD">
+            <column name="F_USER_ID" value="1"/>
+            <column name="F_TITLE" value="TITLE 1"/>
+            <column name="F_FULL_NAME" value="FULL NAME 1"/>
+            <column name="F_WORKING_TELEPHONE" value="8-800-555-35-35"/>
+        </insert>
+
+        <insert tableName="T_CARD">
+            <column name="F_USER_ID" value="2"/>
+            <column name="F_TITLE" value="TITLE 2"/>
+            <column name="F_FULL_NAME" value="FULL NAME 2"/>
+            <column name="F_WORKING_TELEPHONE" value="8-800-837-89-82"/>
+        </insert>
+
+        <insert tableName="T_CARD">
+            <column name="F_USER_ID" value="1"/>
+            <column name="F_TITLE" value="TITLE 3"/>
+            <column name="F_FULL_NAME" value="FULL NAME 3"/>
+            <column name="F_WORKING_TELEPHONE" value="8-800-322-32-32"/>
+        </insert>
+
+        <insert tableName="T_CARD">
+            <column name="F_USER_ID" value="2"/>
+            <column name="F_TITLE" value="TITLE 4"/>
+            <column name="F_FULL_NAME" value="FULL NAME 4"/>
+            <column name="F_WORKING_TELEPHONE" value="8-800-123-23-23"/>
+        </insert>
+
+
+    </changeSet>
+
+
+</databaseChangeLog>

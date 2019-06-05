@@ -1,0 +1,21 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                   http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet id="INSERT_USER_1" author="stas.shilovich@gmail.com">
+        <insert tableName="T_USER">
+            <column name="F_NAME" value="admin"/>
+            <column name="F_PASSWORD" value="$2a$12$w5gzShkl36UKnhKYh9uNoeVXsv27s1lUOZJAWAYS/bylz99rsJSQu"/>
+            <column name="F_ROLE" value="ADMINISTRATOR"/>
+        </insert>
+
+        <insert tableName="T_USER">
+            <column name="F_NAME" value="customer"/>
+            <column name="F_PASSWORD" value="$2a$12$alCbjLNwpCR7O7WUUDbdAOSa06CqtLge/FSOVCieL8WrlpF0VHoq6"/>
+            <column name="F_ROLE" value="CUSTOMER"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>

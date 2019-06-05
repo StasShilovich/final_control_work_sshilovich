@@ -1,4 +1,4 @@
-package com.gmail.shilovich.stas.final;
+package com.gmail.shilovich.stas.jd;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
